@@ -1,0 +1,62 @@
+<html data-ng-app="homeApp">
+<head>
+  <title></title>
+  <script src="../assets/angular.min.js"></script>
+  <script src="../assets/angular-ui-router.min.js"></script>
+  <!--<script src="../assets/ui-bootstrap-tpls-1.2.1.min.js"></script>-->
+  <script src="../app/shared/CApp.module.js"></script>
+  <script src="../app/shared/CApp.route.js"></script>
+  <script src="../app/components/home/home.html"></script>
+  <script src="../app/components/home/home.ctrl.js"></script>
+  <script src="../app/components/add/add.ctrl.js"></script>
+  <script src="../app/components/add/add.factory.js"></script>
+  <script src="../app/components/add/add.html"></script>
+  <script src="../app/components/home/home.factory.js"></script>
+  <script src="../assets/ui-bootstrap-tpls-1.2.1.min.js"></script>
+</head>
+<style type="text/css">
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  #pageHeader {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+  }
+  #footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+  }
+</style>
+<body style="background-color: aquamarine;">
+<div id="pageHeader">
+  <h1>StudentData Center</h1>
+  <h2></h2>
+</div>
+
+<div ui-view>
+
+
+
+</div>
+<div id="footer">created by Pallavi Singh</div>
+</body>
+</html>
+
